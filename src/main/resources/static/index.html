@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VocabVault 🌸</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>VocabVault 🌿</h1>
+            <p>Your English vocabulary tracker</p>
+        </header>
+
+        <section class="random-section">
+            <div class="random-controls">
+                <select id="randomLevel">
+                    <option value="ALL">All Levels</option>
+                    <option value="START_UP_1">Start Up 1</option>
+                    <option value="START_UP_2">Start Up 2</option>
+                    <option value="START_UP_3">Start Up 3</option>
+                    <option value="START_UP_4">Start Up 4</option>
+                    <option value="START_UP_5">Start Up 5</option>
+                    <option value="START_UP_6">Start Up 6</option>
+                    <option value="START_UP_7">Start Up 7</option>
+                    <option value="START_UP_8">Start Up 8</option>
+                    <option value="TOEFL">TOEFL</option>
+                </select>
+                <button id="btnRandom">🎲 Get Random Word</button>
+            </div>
+            <div id="randomResult" class="random-result hidden">
+                <!-- Random word will appear here -->
+            </div>
+        </section>
+
+        <section class="form-section">
+            <form id="vocabForm">
+                <input type="text" id="englishTerm" placeholder="English Word" required>
+                <input type="text" id="spanishTranslation" placeholder="Spanish Translation" required>
+                <input type="text" id="definition" placeholder="English Definition" required>
+                <input type="text" id="synonyms" placeholder="Synonyms (comma separated)">
+                
+                <select id="partOfSpeech" required>
+                    <option value="" disabled selected>Part of Speech</option>
+                    <option value="Noun">Noun</option>
+                    <option value="Verb">Verb</option>
+                    <option value="Adjective">Adjective</option>
+                    <option value="Adverb">Adverb</option>
+                    <option value="Idiom">Idiom</option>
+                </select>
+                <select id="targetLevel" required>
+                    <option value="" disabled selected>Level</option>
+                    <option value="START_UP_1">Start Up 1</option>
+                    <option value="START_UP_2">Start Up 2</option>
+                    <option value="START_UP_3">Start Up 3</option>
+                    <option value="START_UP_4">Start Up 4</option>
+                    <option value="START_UP_5">Start Up 5</option>
+                    <option value="START_UP_6">Start Up 6</option>
+                    <option value="START_UP_7">Start Up 7</option>
+                    <option value="START_UP_8">Start Up 8</option>
+                    <option value="TOEFL">TOEFL</option>
+                </select>
+                <textarea id="exampleSentence" placeholder="Example sentence..." rows="2" required></textarea>
+                <button type="submit">Add Word ✨</button>
+            </form>
+        </section>
+
+        <section class="words-grid" id="wordsContainer">
+            <!-- Word cards will appear here -->
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
