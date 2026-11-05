@@ -46,4 +46,4 @@ Execute the following command in your terminal:
 The application will be available at http://localhost:8080.
 
 ---
-*Built by [Melanie Garza](https://github.com/melanie-garza) - English Instructor & Computer Science Student*
+*Built by (https://github.com/melanie-garza) - English Instructor & Computer Science Student*
